@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras</title>
+</head>
+<body>
+
+    <header>
+        Bem vindo à lista de compras mensal
+    </header>
+
+    
+    <section class="novos__registros">
+        <div class="main-block">
+            <h1>Novo registro</h1>
+            <form action="/" class="formulario">
+                <div class="form__campos">
+
+                    <div class="form__registro">
+                        <fieldset class="form-registro__item">
+                            <input id="item__compra" class="item__compra" type="text" name="item"
+                                placeholder="Item a comprar" autocomplete="off" required>
+                        </fieldset>
+                    </div>
+
+                    <div class="form__registro">
+                        <fieldset class="form-registro__item">
+                            <input id="quantidade__compra" class="quantidade__compra" type="text" name="quantidade"
+                                placeholder="quantos comprar" autocomplete="off" required>
+                        </fieldset>
+                    </div>
+
+                </div>
+
+                <div class="second__block">
+                    <button href="/" type="submit" class="button" id="envia__registro">Enviar</button>
+                </div>
+
+            </form>
+        </div>
+
+    </section>
+
+
+    <section class="dashboard__registros">
+        <table class="tabela__registros">
+            <tr>
+                <th class="dashboard__cabecalho"> #ID </th>
+                <th class="dashboard__cabecalho"> Item </th>
+                <th class="dashboard__cabecalho"> Quantidade </th>
+                <th class="dashboard__cabecalho"> - </th>
+            </tr>
+            <tr>
+                <td> 1 </td>
+                <td> Arroz </td>
+                <td> 2kg </td>
+                <td> <button class="botaoDeleta"> X </button> </td>
+            </tr>
+
+            <tr>
+                <td> 2 </td>
+                <td> feijão </td>
+                <td> 3 latas </td>
+                <td> <button class="botaoDeleta"> X </button> </td>
+            </tr>
+
+            <tr>
+                <td> 3 </td>
+                <td> macarrão </td>
+                <td> 2 pacotes   </td>
+                <td> <button class="botaoDeleta"> X </button> </td>
+            </tr>
+
+            <tr>
+                <td> 4</td>
+                <td> carne </td>
+                <td> 3kg </td>
+                <td> <button class="botaoDeleta"> X </button> </td>
+            </tr>  
+
+        </table>
+
+
+        <script src="index.js"></script>
+
+</body>
+</html>
