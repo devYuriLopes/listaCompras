@@ -15,23 +15,19 @@ $btnEnviar.addEventListener('click', function (event) {
                 <td> ${$campoValor.value}  </td>
                 <td> <button class="botaoDeleta"> X </button> </td>
             </tr>
-    `)
-    incrementaArray();
-    limpaCampos();
+    `);
+    (function incrementaArray() {
+        let item = {
+            item: $campoItem.value,
+            quantidade: $campoQuantidade.value,
+            valor: Number($campoValor.value)
+        };
+        listaDeCompras.push(item);
+        console.log(listaDeCompras)
+    })();
+    (function limpaCampos() {
+        $campoItem.value = '';
+        $campoQuantidade.value = '';
+        $campoValor.value = '';
+    })();
 })
-
-function limpaCampos() {
-    $campoItem.value = '';
-    $campoQuantidade.value = '';
-    $campoValor.value = '';
-}
-
-function incrementaArray(){
-    let item = {
-        item: $campoItem.value,
-        quantidade: $campoQuantidade.value,
-        valor: Number($campoValor.value)
-    }
-    listaDeCompras.push(item);
-    console.log(listaDeCompras)
-}

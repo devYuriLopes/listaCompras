@@ -1,23 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compras</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+
+<body class="bg-zinc-200">
 
     <header>
-        Bem vindo à lista de compras mensal
+        
+     <h1 class="text-3xl text-center font-semibold p-10 ">   Bem vindo à lista de compras mensal  </h1>
+
     </header>
 
-    
-    <section class="novos__registros">
-        <div class="main-block">
-            <h1>Novo registro</h1>
-            <form action="/" class="formulario">
-                <div class="form__campos">
+    <section class="novos__registros" >
+        <div class="">
+            <h3 class="text-2xl p-2">Novo registro</h1>
+            <form action="/" class="formulario ">
+                <div class=" ">
 
                     <div class="form__registro">
                         <fieldset class="form-registro__item">
@@ -35,8 +39,8 @@
 
                     <div class="form__registro">
                         <fieldset class="form-registro__item">
-                            <input id="valor__compra" class="valor__compra" type="text" name="valor"
-                                placeholder="preço" autocomplete="off" required>
+                            <input id="valor__compra" class="valor__compra" type="text" name="valor" placeholder="preço"
+                                autocomplete="off" required>
                         </fieldset>
                     </div>
 
@@ -53,6 +57,7 @@
 
 
     <section class="dashboard__registros">
+         
         <table class="tabela__registros">
             <tr>
                 <th class="dashboard__cabecalho"> #ID </th>
@@ -65,7 +70,8 @@
         </table>
 
 
-        <script src="index.js"></script>
+
 
 </body>
+
 </html>
