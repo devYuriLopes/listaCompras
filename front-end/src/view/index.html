@@ -12,52 +12,54 @@
 <body class="bg-zinc-200">
 
     <header>
-        
-     <h1 class="text-3xl text-center font-semibold p-10 ">   Bem vindo à lista de compras mensal  </h1>
+
+        <h1 class="text-3xl text-center font-semibold p-10 "> Bem vindo à lista de compras mensal </h1>
 
     </header>
 
-    <section class="novos__registros" >
-        <div class="">
+    <section class="novos__registros flex items-center justify-center">
+        <div class="flex items-center justify-center flex-col w-full">
             <h3 class="text-2xl p-2">Novo registro</h1>
-            <form action="/" class="formulario ">
-                <div class=" ">
 
-                    <div class="form__registro">
-                        <fieldset class="form-registro__item">
-                            <input id="item__compra" class="item__compra" type="text" name="item"
-                                placeholder="Item a comprar" autocomplete="off" required>
-                        </fieldset>
+                <form action="/" class="formulario ">
+
+                    <div class=" flex flex-row ">
+
+                        <div class="form__registro mx-10">
+                            <fieldset class="form-registro__item">
+                                <input id="item__compra flex items-center justify-center" class="item__compra" type="text" name="item"
+                                    placeholder="Item a comprar" autocomplete="off" required>
+                            </fieldset>
+                        </div>
+
+                        <div class="form__registro  mx-10">
+                            <fieldset class="form-registro__item">
+                                <input id="quantidade__compra" class="quantidade__compra" type="text" name="quantidade"
+                                    placeholder="quantos comprar" autocomplete="off" required>
+                            </fieldset>
+                        </div>
+
+                        <div class="form__registro  mx-10">
+                            <fieldset class="form-registro__item">
+                                <input id="valor__compra" class="valor__compra" type="text" name="valor"
+                                    placeholder="preço" autocomplete="off" required>
+                            </fieldset>
+                        </div>
+
                     </div>
 
-                    <div class="form__registro">
-                        <fieldset class="form-registro__item">
-                            <input id="quantidade__compra" class="quantidade__compra" type="text" name="quantidade"
-                                placeholder="quantos comprar" autocomplete="off" required>
-                        </fieldset>
+                    <div class="second__block flex items-center justify-center">
+                        <button href="/" type="submit" class="button" id="envia__registro">Enviar</button>
                     </div>
 
-                    <div class="form__registro">
-                        <fieldset class="form-registro__item">
-                            <input id="valor__compra" class="valor__compra" type="text" name="valor" placeholder="preço"
-                                autocomplete="off" required>
-                        </fieldset>
-                    </div>
-
-                </div>
-
-                <div class="second__block">
-                    <button href="/" type="submit" class="button" id="envia__registro">Enviar</button>
-                </div>
-
-            </form>
+                </form>
         </div>
 
     </section>
 
 
     <section class="dashboard__registros">
-         
+
         <table class="tabela__registros">
             <tr>
                 <th class="dashboard__cabecalho"> #ID </th>
