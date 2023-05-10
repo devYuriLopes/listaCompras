@@ -8,14 +8,16 @@ let listaDeCompras = [];
 $btnEnviar.addEventListener('click', function (event) {
     event.preventDefault()
     $form.insertAdjacentHTML('beforeend', `
-    <tr>
-                <td> ${listaDeCompras.length} </td>
-                <td> ${$campoItem.value}  </td>
-                <td> ${$campoQuantidade.value}  </td>
-                <td> ${$campoValor.value}  </td>
-                <td> <button class="botaoDeleta"> X </button> </td>
-            </tr>
-    `);
+
+    <tr class="border border-black">
+
+        <td class="text-center border border-black"> ${listaDeCompras.length + 1} </td>
+        <td class="text-center border border-black"> ${$campoItem.value}   </td>
+        <td class="text-center border border-black "> ${$campoQuantidade.value}   </td>
+        <td class="text-center border border-black"> ${$campoValor.value}   </td>
+        <td class="text-center border border-black"> <button class="botaoDeleta bg-red-700 w-5 rounded-md text-white"> X </button> </td>
+</tr>  `);
+
     (function incrementaArray() {
         let item = {
             item: $campoItem.value,

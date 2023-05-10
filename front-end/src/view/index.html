@@ -13,13 +13,13 @@
 
     <header>
 
-        <h1 class="text-3xl text-center font-semibold p-10 "> Bem vindo à lista de compras mensal </h1>
+        <h1 class="text-3xl text-center font-semibold p-10 "> BEM VINDO À LISTA DE COMPRAS MENSAL </h1>
 
     </header>
 
     <section class="novos__registros flex items-center justify-center">
         <div class="flex items-center justify-center flex-col w-full">
-            <h3 class="text-2xl p-2">Novo registro</h1>
+            <h3 class="text-2xl p-2">NOVO REGISTRO</h1>
 
                 <form action="/" class="formulario ">
 
@@ -27,29 +27,30 @@
 
                         <div class="form__registro mx-10">
                             <fieldset class="form-registro__item">
-                                <input id="item__compra " class="item__compra" type="text" name="item"
-                                    placeholder="Item a comprar" autocomplete="off" required>
+                                <input id="item__compra " class="item__compra text-center rounded-full" type="text" name="item"
+                                    placeholder="ITEM A COMPRAR" autocomplete="off" required>
                             </fieldset>
                         </div>
 
                         <div class="form__registro  mx-10">
                             <fieldset class="form-registro__item">
-                                <input id="quantidade__compra" class="quantidade__compra" type="text" name="quantidade"
-                                    placeholder="quantos comprar" autocomplete="off" required>
+                                <input id="quantidade__compra" class="quantidade__compra text-center rounded-full" type="text" name="quantidade"
+                                    placeholder="QUANTOS COMPRAR" autocomplete="off" required>
                             </fieldset>
                         </div>
 
                         <div class="form__registro  mx-10">
                             <fieldset class="form-registro__item">
-                                <input id="valor__compra" class="valor__compra " type="text" name="valor"
-                                    placeholder="preço" autocomplete="off" required>
+                                <input id="valor__compra" class="valor__compra text-center rounded-full" type="text" name="valor"
+                                    placeholder="PREÇO" autocomplete="off" required>
                             </fieldset>
                         </div>
 
                     </div>
 
                     <div class="second__block w-32 w-full flex items-center justify-center ">
-                        <button href="/" class=" w-32 bg-lime-500 hover:bg-lime-700 rounded-full" type="submit" class="button" id="envia__registro">Enviar</button>
+                        <button href="/" class=" w-32 border border-slate-300 hover:border-slate-400 rounded-full" type="submit"
+                            class="button" id="envia__registro">Enviar</button>
                     </div>
 
                 </form>
@@ -58,15 +59,15 @@
     </section>
 
 
-    <section class="dashboard__registros">
+    <section class="dashboard__registros border flex items-center justify-center">
 
-        <table class="tabela__registros">
-            <tr>
-                <th class="dashboard__cabecalho"> #ID </th>
-                <th class="dashboard__cabecalho"> Item </th>
-                <th class="dashboard__cabecalho"> Quantidade </th>
-                <th class="dashboard__cabecalho"> Valor </th>
-                <th class="dashboard__cabecalho"> - </th>
+        <table class="tabela__registros w-1/2 mt-5 ">
+            <tr class="">
+                <th class="dashboard__cabecalho border border-black "> #ID </th>
+                <th class="dashboard__cabecalho border border-black "> ITEM </th>
+                <th class="dashboard__cabecalho border border-black"> QUANTIDADE </th>
+                <th class="dashboard__cabecalho border border-black"> VALOR </th>
+                <th class="dashboard__cabecalho border border-black"> - </th>
             </tr>
 
         </table>
@@ -75,5 +76,7 @@
 
 
 </body>
+
+<script src="../index.js"></script>
 
 </html>
