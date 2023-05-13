@@ -11,10 +11,10 @@ $btnEnviar.addEventListener('click', function (event) {
 
     <tr class="border border-black">
 
-        <td class="text-center border border-black"> ${listaDeCompras.length + 1} </td>
+        <td class="text-center border border-black"> <input type="checkbox"> </td>
         <td class="text-center border border-black"> ${$campoItem.value}   </td>
         <td class="text-center border border-black "> ${$campoQuantidade.value}   </td>
-        <td class="text-center border border-black"> ${$campoValor.value}   </td>
+        <td class="text-center border border-black"> ${$campoQuantidade.value * $campoValor.value} €   </td>
         <td class="text-center border border-black"> <button class="botaoDeleta bg-red-700 w-5 rounded-md text-white"> X </button> </td>
 </tr>  `);
 

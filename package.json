@@ -1,0 +1,34 @@
+{
+  "name": "listacompras",
+  "version": "1.0.0",
+  "description": "appFamiliar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon back-end/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devYuriLopes/listaCompras.git"
+  },
+  "keywords": [
+    "listaCompras",
+    "aplicativo",
+    "pessoal",
+    "gestão",
+    "de",
+    "gastos"
+  ],
+  "author": "YuriLopes / devyurilopes@outlook.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devYuriLopes/listaCompras/issues"
+  },
+  "homepage": "https://github.com/devYuriLopes/listaCompras#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
