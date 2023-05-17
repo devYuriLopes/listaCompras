@@ -33,3 +33,5 @@ $btnEnviar.addEventListener('click', function (event) {
         $campoValor.value = '';
     })();
 })
+
+export default listaDeCompras;
