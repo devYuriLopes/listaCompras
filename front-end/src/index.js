@@ -1,8 +1,8 @@
-let $campoItem = document.querySelector('.item__compra');
-let $campoQuantidade = document.querySelector('.quantidade__compra');
-let $campoValor = document.querySelector('.valor__compra');
-let $btnEnviar = document.querySelector('#envia__registro');
-let $form = document.querySelector('.tabela__registros');
+const $campoItem = document.querySelector('.item__compra');
+const $campoQuantidade = document.querySelector('.quantidade__compra');
+const $campoValor = document.querySelector('.valor__compra');
+const $btnEnviar = document.querySelector('#envia__registro');
+const $form = document.querySelector('.tabela__registros');
 let listaDeCompras = [];
 
 $btnEnviar.addEventListener('click', function (event) {
@@ -18,20 +18,18 @@ $btnEnviar.addEventListener('click', function (event) {
         <td class="text-center border border-black"> <button class="botaoDeleta bg-red-700 w-5 rounded-md text-white"> X </button> </td>
 </tr>  `);
 
-    (function incrementaArray() {
-        let item = {
-            item: $campoItem.value,
-            quantidade: $campoQuantidade.value,
-            valor: Number($campoValor.value)
-        };
-        listaDeCompras.push(item);
-        console.log(listaDeCompras)
-    })();
+     (function incrementaArray() {
+         let item = {
+             item: $campoItem.value,
+             quantidade: $campoQuantidade.value,
+             valor: Number($campoValor.value)
+         };
+         listaDeCompras.push(item);
+         console.log(listaDeCompras)
+     })();
     (function limpaCampos() {
         $campoItem.value = '';
         $campoQuantidade.value = '';
         $campoValor.value = '';
     })();
 })
-
-export default listaDeCompras;
